@@ -1,0 +1,12 @@
+#include <iostream>
+#include "Date.h"
+#include <string>
+
+int main()
+{
+    Date tmp;
+    std::cin >> tmp;
+    Date date = Date(31, 12, 2021);
+    std::cout << date << '\n';
+    std::cout << (date < tmp ? date : tmp) << '\n';
+}
