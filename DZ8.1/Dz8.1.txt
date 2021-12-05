@@ -1,0 +1,47 @@
+#include <iostream>
+#include "Drob.h"
+
+int main()
+{
+    /*
+    Drob d1, d2;
+    std::cin >> d1 >> d2;
+    d1 = d1.sokrat();
+    std::cout << "Divided fraction 1: " << d1 << '\n';
+    std::cout << "d1 + d2: " << d1 + d2 << '\n';
+    std::cout << "d1 - d2: " << d1 - d2 << '\n';
+    std::cout << "d1 * d2: " << d1 * d2 << '\n';
+    std::cout << "d1 / d2: " << d1 / d2 << '\n';
+    d1 += d2;
+    std::cout << "d1 + d2: " << d1 << '\n';
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    std::cout << "d1 == d2 ? " << (d1 == d2) << '\n';
+    std::cout << "d1 > d2 ? " << (d1 > d2) << '\n';
+    std::cout << "d1 < d2 ? " << (d1 < d2) << '\n';
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    d1 = d2;
+    std::cout << "d1 = d2\n";
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    d2 = Drob(6, 13);
+    std::cout << "d2 = 6/13\n";
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    d1++;
+    std::cout << "d1++\n";
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    std::cout << "d2(d1); d1++\n";
+    d2(d1);
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    d1++;
+    std::cout << "d1: " << d1 << " d2: " << d2 << '\n';
+    */
+    try
+    {
+        Drob d1(1, 0);
+    }
+    catch (BadDenominator& exception)
+    {
+        std::cerr << "Error: Drob exception has been caught: " << exception.what() << '\n';
+    }
+
+    return 0;
+}
